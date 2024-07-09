@@ -1,0 +1,48 @@
+name: addro
+
+# notes:
+# There are only four data types: string, float, path, uri (no int or bool).
+# https://mlflow.org/docs/latest/projects.html#specifying-parameters
+
+entry_points:
+  # SharpDRO-style experiments (and related tests).
+  main_experiment:
+    parameters:
+      adaptive: {type: string}
+      base_gpu_id: {type: float}
+      bs_tr: {type: float}
+      corruption_type: {type: string}
+      dataset: {type: string}
+      dimension: {type: float}
+      epochs: {type: float}
+      eta: {type: float}
+      flood_level: {type: float}
+      force_cpu: {type: string}
+      force_one_gpu: {type: string}
+      gradnorm: {type: string}
+      height: {type: float}
+      loss: {type: string}
+      method: {type: string}
+      model: {type: string}
+      momentum: {type: float}
+      num_classes: {type: float}
+      num_severity_levels: {type: float}
+      optimizer: {type: string}
+      optimizer_base: {type: string}
+      pre_trained: {type: string}
+      prob_update_factor: {type: float}
+      quantile_level: {type: float}
+      radius: {type: float}
+      random_seed: {type: float}
+      saving_freq: {type: float}
+      scheduler: {type: string}
+      severity_dist: {type: string}
+      sigma: {type: float}
+      skip_singles: {type: string}
+      softad_level: {type: float}
+      step_size: {type: float}
+      tilt: {type: float}
+      tr_frac: {type: float}
+      weight_decay: {type: float}
+      width: {type: float}
+    command: "python main_experiment.py --adaptive {adaptive} --base-gpu-id {base_gpu_id} --bs-tr {bs_tr} --corruption-type {corruption_type} --dataset {dataset} --dimension {dimension} --epochs {epochs} --eta {eta} --flood-level {flood_level} --force-cpu {force_cpu} --force-one-gpu {force_one_gpu} --gradnorm {gradnorm} --height {height} --loss {loss} --method {method} --model {model} --momentum {momentum} --num-classes {num_classes} --num-severity-levels {num_severity_levels} --optimizer {optimizer} --optimizer-base {optimizer_base} --pre-trained {pre_trained} --prob-update-factor {prob_update_factor} --quantile-level {quantile_level} --radius {radius} --random-seed {random_seed} --saving-freq {saving_freq} --scheduler {scheduler} --severity-dist {severity_dist} --sigma {sigma} --skip-singles {skip_singles} --softad-level {softad_level} --step-size {step_size} --tilt {tilt} --tr-frac {tr_frac} --weight-decay {weight_decay} --width {width}"
