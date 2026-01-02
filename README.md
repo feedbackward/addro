@@ -2,7 +2,7 @@
 
 In this repository, we provide software and demonstrations related to the following paper:
 
-- [Making Robust Generalizers Less Rigid with Soft Ascent-Descent](https://arxiv.org/abs/2408.03619). Matthew J. Holland and Toma Hamada. *Preprint*.
+- [Making Robust Generalizers Less Rigid with Loss Concentration](https://arxiv.org/abs/2408.03619). Matthew J. Holland and Toma Hamada, *ICONIP 2025*.
 
 We provide code which can be used to faithfully reproduce all the experiment results given in the above paper, and can also be applied easily to more general machine learning tasks outside the examples considered here.
 
